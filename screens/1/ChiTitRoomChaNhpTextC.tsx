@@ -1,0 +1,1912 @@
+import * as React from "react";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { Color, Padding, FontFamily, Border, FontSize } from "../../GlobalStyles";
+
+const ChiTitRoomChaNhpTextC = () => {
+  return (
+    <View style={[styles.chiTitRoomChaNhpTextC, styles.khungChatBg]}>
+      <View style={styles.roomheaderParent}>
+        <View style={[styles.roomheader, styles.button1SpaceBlock]}>
+          <Image
+            style={[styles.leftIcon, styles.leftIconLayout]}
+            resizeMode="cover"
+            source={require("../../assets/27-left1.png")}
+          />
+          <View style={styles.room}>
+            <Image
+              style={styles.roommessageavtIcon}
+              resizeMode="cover"
+              source={require("../../assets/roommessageavt23.png")}
+            />
+            <View style={styles.nameParent}>
+              <View style={styles.name}>
+                <Image
+                  style={[styles.mobileIcon, styles.iconLayout2]}
+                  resizeMode="cover"
+                  source={require("../../assets/mobile1.png")}
+                />
+                <View style={styles.returnVisitorParent}>
+                  <Image
+                    style={[
+                      styles.returnVisitorIcon,
+                      styles.returnVisitorIconLayout,
+                    ]}
+                    resizeMode="cover"
+                    source={require("../../assets/return-visitor1.png")}
+                  />
+                  <Text style={[styles.lMinhTr, styles.textTypo1]}>
+                    Lê Minh Trí
+                  </Text>
+                  <Image
+                    style={[styles.ficheckSquareIcon, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/fichecksquare.png")}
+                  />
+                  <Image
+                    style={styles.statusIcon}
+                    resizeMode="cover"
+                    source={require("../../assets/status.png")}
+                  />
+                </View>
+              </View>
+              <View style={styles.roomlistNhn}>
+                <View style={[styles.purple, styles.redFlexBox]}>
+                  <Text style={[styles.label, styles.labelTypo]}>KH VIP</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout2]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.cyan, styles.redFlexBox]}>
+                  <Text style={[styles.label, styles.labelTypo]}>
+                    Tư vấn sp
+                  </Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout2]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.yellow, styles.redFlexBox]}>
+                  <Text style={[styles.label, styles.labelTypo]}>
+                    chưa đóng phí
+                  </Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout2]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.blue, styles.redFlexBox]}>
+                  <Text style={[styles.label, styles.labelTypo]}>Có sđt</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout2]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.green, styles.redFlexBox]}>
+                  <Text style={[styles.label, styles.labelTypo]}>chưa gọi</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout2]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.red, styles.redFlexBox]}>
+                  <Text style={[styles.label, styles.labelTypo]}>
+                    liên hệ lại
+                  </Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout2]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.xTag, styles.redFlexBox]}>
+                  <Text style={[styles.label, styles.labelTypo]}>+4</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout2]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+          <Image
+            style={[styles.thmNHng, styles.leftIconLayout]}
+            resizeMode="cover"
+            source={require("../../assets/thm-n-hng.png")}
+          />
+          <Image
+            style={[styles.optionsVerticalIcon, styles.leftIconLayout]}
+            resizeMode="cover"
+            source={require("../../assets/optionsvertical.png")}
+          />
+        </View>
+        <View style={[styles.khungChat, styles.khungChatBg]}>
+          <View style={styles.layoutBlocksVertical}>
+            <View style={styles.messagelogAction}>
+              <Text style={styles.time}>12:05</Text>
+              <View style={[styles.logMessagenormal, styles.logLayout]}>
+                <Text style={[styles.bn, styles.bnTypo]}>Bạn</Text>
+                <Text style={[styles.honTtCuc, styles.bnTypo1]}>
+                  đã hoàn tất cuộc hội thoại
+                </Text>
+              </View>
+            </View>
+            <View style={[styles.messagecell, styles.messagecellFlexBox]}>
+              <View style={styles.avtFlexBox}>
+                <Image
+                  style={[styles.avtIcon, styles.iconLayout]}
+                  resizeMode="cover"
+                  source={require("../../assets/avt1.png")}
+                />
+              </View>
+              <Text style={[styles.huongnt256, styles.bnTypo]}>HuongNT256</Text>
+              <View style={styles.messageitem}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH, styles.tiCnHTypo]}>
+                    Tôi cần hỗ trợ
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View style={[styles.messagecell1, styles.messagecellFlexBox]}>
+              <View style={styles.messageitem1}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH1, styles.tiCnHTypo]}>
+                    Chào bạn, tôi có thể giúp gì cho bạn
+                  </Text>
+                </View>
+              </View>
+              <View style={[styles.status, styles.avtFlexBox]}>
+                <View style={styles.iconLayout1} />
+              </View>
+            </View>
+            <View style={[styles.messagecell, styles.messagecellFlexBox]}>
+              <View style={styles.avtFlexBox}>
+                <Image
+                  style={[styles.avtIcon, styles.iconLayout]}
+                  resizeMode="cover"
+                  source={require("../../assets/avt1.png")}
+                />
+              </View>
+              <Text style={[styles.huongnt256, styles.bnTypo]}>HuongNT256</Text>
+              <View style={styles.messageitem}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH, styles.tiCnHTypo]}>
+                    Tôi muốn tìm hiểu về sản phẩm dịch vụ bên bạn, vui lòng tư
+                    vấn giúp tôi
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View style={[styles.messagecell1, styles.messagecellFlexBox]}>
+              <View style={styles.messageitem1}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH1, styles.tiCnHTypo]}>
+                    Cảm ơn bạn đã quan tâm
+                  </Text>
+                </View>
+              </View>
+              <View style={[styles.status, styles.avtFlexBox]}>
+                <View style={styles.iconLayout1} />
+              </View>
+            </View>
+            <View style={[styles.messagecell, styles.messagecellFlexBox]}>
+              <View style={styles.avtFlexBox}>
+                <Image
+                  style={[styles.avtIcon, styles.iconLayout]}
+                  resizeMode="cover"
+                  source={require("../../assets/avt1.png")}
+                />
+              </View>
+              <Text style={[styles.huongnt256, styles.bnTypo]}>HuongNT256</Text>
+              <View style={styles.messageitem}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH, styles.tiCnHTypo]}>
+                    Gửi cho tôi xin thông tin
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View style={[styles.messagecell1, styles.messagecellFlexBox]}>
+              <View style={styles.messageitem1}>
+                <View style={styles.messageTypeaudio}>
+                  <View style={styles.record}>
+                    <Image
+                      style={[styles.btnIcon, styles.iconLayout]}
+                      resizeMode="cover"
+                      source={require("../../assets/btn2.png")}
+                    />
+                    <View style={styles.rectangleParent}>
+                      <View style={styles.frameChild} />
+                      <Image
+                        style={styles.frameItem}
+                        resizeMode="cover"
+                        source={require("../../assets/ellipse-667.png")}
+                      />
+                      <View style={styles.frameInner} />
+                    </View>
+                    <Text style={[styles.text, styles.textTypo]}>00:05</Text>
+                  </View>
+                  <Image
+                    style={[styles.closeIcon7, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close8.png")}
+                  />
+                </View>
+              </View>
+              <View style={[styles.status, styles.avtFlexBox1]}>
+                <Image
+                  style={styles.iconLayout1}
+                  resizeMode="cover"
+                  source={require("../../assets/messagestatus1.png")}
+                />
+              </View>
+            </View>
+            <View style={[styles.messagelogAction1, styles.messagecellFlexBox]}>
+              <Text style={styles.time}>12:05</Text>
+              <View style={[styles.logMessagenormal1, styles.logLayout]}>
+                <Text style={[styles.bn, styles.bnTypo]}>Bạn</Text>
+                <Text style={[styles.honTtCuc, styles.bnTypo1]}>
+                  đã hoàn tất cuộc hội thoại
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View style={styles.composeBar}>
+          <View style={[styles.helperText, styles.helperTextSpaceBlock]}>
+            <Text style={[styles.description, styles.bnTypo1]}>
+              Khi khách hàng nhắn tin, hội thoại sẽ chuyển sang Tab Fchat
+            </Text>
+          </View>
+          <View style={[styles.composeBar1, styles.helperTextSpaceBlock]}>
+            <Image
+              style={[styles.imageIcon, styles.leftIconLayout]}
+              resizeMode="cover"
+              source={require("../../assets/image.png")}
+            />
+            <Image
+              style={[styles.cameraIcon, styles.leftIconLayout]}
+              resizeMode="cover"
+              source={require("../../assets/camera3.png")}
+            />
+            <Image
+              style={[styles.cameraIcon, styles.leftIconLayout]}
+              resizeMode="cover"
+              source={require("../../assets/file.png")}
+            />
+            <View style={styles.icon}>
+              <Image
+                style={[styles.leftIcon, styles.leftIconLayout]}
+                resizeMode="cover"
+                source={require("../../assets/plus.png")}
+              />
+            </View>
+            <Image
+              style={[styles.cameraIcon, styles.leftIconLayout]}
+              resizeMode="cover"
+              source={require("../../assets/mic4.png")}
+            />
+            <View style={styles.send}>
+              <Image
+                style={[
+                  styles.iconsendPlaneFill,
+                  styles.returnVisitorIconLayout,
+                ]}
+                resizeMode="cover"
+                source={require("../../assets/iconsendplanefill.png")}
+              />
+            </View>
+            <View style={[styles.composer, styles.composerSpaceBlock]}>
+              <View style={styles.nhpTinNhnWrapper}>
+                <Text style={[styles.nhpTinNhnContainer, styles.textTypo]}>
+                  <Text style={styles.text1}>|</Text>
+                  <Text style={styles.nhpTinNhn}>Nhập tin nhắn</Text>
+                </Text>
+              </View>
+              <Image
+                style={styles.emojiIcon}
+                resizeMode="cover"
+                source={require("../../assets/emoji111.png")}
+              />
+            </View>
+            <View style={styles.icon1}>
+              <Image
+                style={[styles.leftIcon, styles.leftIconLayout]}
+                resizeMode="cover"
+                source={require("../../assets/camera1.png")}
+              />
+            </View>
+            <View style={styles.icon1}>
+              <Image
+                style={[styles.leftIcon, styles.leftIconLayout]}
+                resizeMode="cover"
+                source={require("../../assets/mic3.png")}
+              />
+            </View>
+          </View>
+          <View style={styles.alphabetickeyboard}>
+            <View style={[styles.keys, styles.keysPosition]}>
+              <View style={styles.topRow}>
+                <View style={styles.key}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>Q</Text>
+                </View>
+                <View style={styles.key1}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    W
+                  </Text>
+                </View>
+                <View style={[styles.key2, styles.keyPosition5]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>E</Text>
+                </View>
+                <View style={[styles.key3, styles.keyPosition4]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    R
+                  </Text>
+                </View>
+                <View style={[styles.key4, styles.keyPosition3]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>T</Text>
+                </View>
+                <View style={[styles.key5, styles.keyPosition2]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    Y
+                  </Text>
+                </View>
+                <View style={styles.key6}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    U
+                  </Text>
+                </View>
+                <View style={[styles.key7, styles.keyPosition1]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>I</Text>
+                </View>
+                <View style={[styles.key8, styles.keyPosition]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    O
+                  </Text>
+                </View>
+                <View style={styles.key9}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>P</Text>
+                </View>
+              </View>
+              <View style={styles.middleRow}>
+                <View style={styles.key10}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>A</Text>
+                </View>
+                <View style={[styles.key11, styles.keyPosition5]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    S
+                  </Text>
+                </View>
+                <View style={[styles.key12, styles.keyPosition4]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    D
+                  </Text>
+                </View>
+                <View style={[styles.key13, styles.keyPosition3]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>F</Text>
+                </View>
+                <View style={[styles.key14, styles.keyPosition2]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    G
+                  </Text>
+                </View>
+                <View style={styles.key15}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>H</Text>
+                </View>
+                <View style={[styles.key16, styles.keyPosition1]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    J
+                  </Text>
+                </View>
+                <View style={[styles.key17, styles.keyPosition]}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter1, styles.letterPosition1]}>
+                    K
+                  </Text>
+                </View>
+                <View style={styles.key18}>
+                  <View style={styles.keycontainerShadowBox1} />
+                  <Text style={[styles.letter, styles.letterPosition1]}>L</Text>
+                </View>
+              </View>
+              <View style={styles.bottomRow}>
+                <View style={styles.keys1}>
+                  <View style={styles.key19}>
+                    <View style={styles.keycontainerShadowBox1} />
+                    <Text style={[styles.letter1, styles.letterPosition1]}>
+                      Z
+                    </Text>
+                  </View>
+                  <View style={styles.key20}>
+                    <View style={styles.keycontainerShadowBox1} />
+                    <Text style={[styles.letter20, styles.letterPosition1]}>
+                      X
+                    </Text>
+                  </View>
+                  <View style={styles.key21}>
+                    <View style={styles.keycontainerShadowBox1} />
+                    <Text style={[styles.letter1, styles.letterPosition1]}>
+                      C
+                    </Text>
+                  </View>
+                  <View style={styles.key22}>
+                    <View style={styles.keycontainerShadowBox1} />
+                    <Text style={[styles.letter22, styles.letterPosition1]}>
+                      V
+                    </Text>
+                  </View>
+                  <View style={styles.key23}>
+                    <View style={styles.keycontainerShadowBox1} />
+                    <Text style={[styles.letter20, styles.letterPosition1]}>
+                      B
+                    </Text>
+                  </View>
+                  <View style={styles.key24}>
+                    <View style={styles.keycontainerShadowBox1} />
+                    <Text style={[styles.letter1, styles.letterPosition1]}>
+                      N
+                    </Text>
+                  </View>
+                  <View style={styles.key25}>
+                    <View style={styles.keycontainerShadowBox1} />
+                    <Text style={[styles.letter1, styles.letterPosition1]}>
+                      M
+                    </Text>
+                  </View>
+                </View>
+                <Image
+                  style={[styles.keyIcon, styles.keyIconLayout]}
+                  resizeMode="cover"
+                  source={require("../../assets/-key.png")}
+                />
+                <Image
+                  style={[styles.keyIcon1, styles.keyIconLayout]}
+                  resizeMode="cover"
+                  source={require("../../assets/-key1.png")}
+                />
+              </View>
+            </View>
+            <View style={[styles.bottomRow1, styles.keysPosition]}>
+              <View style={styles.key26}>
+                <View style={styles.keycontainerShadowBox} />
+                <Text style={[styles.letter26, styles.letterPosition]}>
+                  123
+                </Text>
+              </View>
+              <View style={[styles.key27, styles.keySpaceBlock]}>
+                <View style={styles.keycontainerShadowBox1} />
+                <Text style={[styles.letter27, styles.letterPosition]}>
+                  Dấu cách
+                </Text>
+              </View>
+              <View style={[styles.key28, styles.keySpaceBlock]}>
+                <View style={styles.keycontainerShadowBox} />
+                <Text style={[styles.letter26, styles.letterPosition]}>
+                  Nhập
+                </Text>
+              </View>
+            </View>
+            <View style={styles.emojiDictation}>
+              <Image
+                style={styles.iconEmoji}
+                resizeMode="cover"
+                source={require("../../assets/icon--emoji.png")}
+              />
+              <Image
+                style={styles.iconDictation}
+                resizeMode="cover"
+                source={require("../../assets/icon--dictation.png")}
+              />
+            </View>
+            <View style={[styles.homeindicator, styles.homeindicatorLayout]}>
+              <View style={[styles.homeIndicator, styles.homeLayout]} />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View style={[styles.statusbarIphone13, styles.homeindicator1Position]}>
+        <Image
+          style={styles.notchIcon}
+          resizeMode="cover"
+          source={require("../../assets/notch1.png")}
+        />
+        <View style={[styles.leftSide, styles.leftSideLayout]}>
+          <View style={[styles.statusbarTime, styles.leftSideLayout]}>
+            <Text style={[styles.text2, styles.text2Position]}>9:41</Text>
+          </View>
+        </View>
+        <View style={[styles.rightSide, styles.rightSidePosition]}>
+          <Image
+            style={[styles.batteryIcon, styles.rightSidePosition]}
+            resizeMode="cover"
+            source={require("../../assets/battery.png")}
+          />
+          <Image
+            style={styles.wifiIcon}
+            resizeMode="cover"
+            source={require("../../assets/wifi.png")}
+          />
+          <Image
+            style={[styles.iconMobileSignal, styles.text2Position]}
+            resizeMode="cover"
+            source={require("../../assets/icon--mobile-signal.png")}
+          />
+        </View>
+      </View>
+      <View style={styles.chiTitRoomChaNhpTextCChild} />
+      <View style={styles.actionSheetthVinNh}>
+        <View style={[styles.actionSheetheader, styles.composerSpaceBlock]}>
+          <Image
+            style={[styles.leftIcon1, styles.leftIconLayout]}
+            resizeMode="cover"
+            source={require("../../assets/27-left11.png")}
+          />
+          <View style={styles.titleWrapper}>
+            <Text style={[styles.title, styles.titleTypo]} numberOfLines={1}>
+              Thư viện ảnh
+            </Text>
+          </View>
+          <View style={[styles.button, styles.buttonPosition]}>
+            <Image
+              style={[styles.iconsetplaceholder, styles.leftIconLayout]}
+              resizeMode="cover"
+              source={require("../../assets/iconsetplaceholder3.png")}
+            />
+            <Text style={[styles.text3, styles.titleTypo]}>Lưu</Text>
+            <Image
+              style={[styles.iconsetplaceholder1, styles.leftIconLayout]}
+              resizeMode="cover"
+              source={require("../../assets/iconsetplaceholder3.png")}
+            />
+          </View>
+          <Image
+            style={[styles.closeIcon8, styles.closeIcon8Position]}
+            resizeMode="cover"
+            source={require("../../assets/23-close4.png")}
+          />
+        </View>
+        <View style={styles.frameParent}>
+          <View style={styles.frameGroup}>
+            <View style={styles.cameraParent}>
+              <Image
+                style={[styles.leftIcon, styles.leftIconLayout]}
+                resizeMode="cover"
+                source={require("../../assets/camera7.png")}
+              />
+              <Text style={[styles.chpNh, styles.labelTypo]}>Chụp ảnh</Text>
+            </View>
+            <View style={[styles.rectangleGroup, styles.frameChildLayout2]}>
+              <Image
+                style={[styles.rectangleIcon, styles.frameChildLayout1]}
+                resizeMode="cover"
+                source={require("../../assets/rectangle-18813.png")}
+              />
+              <View style={[styles.rectangleView, styles.rectanglePosition]} />
+              <View style={styles.badge}>
+                <Text style={[styles.number, styles.titleTypo]}>1</Text>
+              </View>
+            </View>
+            <View style={[styles.rectangleGroup, styles.frameChildLayout2]}>
+              <Image
+                style={[styles.rectangleIcon, styles.frameChildLayout1]}
+                resizeMode="cover"
+                source={require("../../assets/rectangle-1880.png")}
+              />
+              <View style={[styles.rectangleView, styles.rectanglePosition]} />
+              <View style={styles.badge}>
+                <Text style={[styles.number, styles.titleTypo]}>2</Text>
+              </View>
+            </View>
+          </View>
+          <View style={styles.frameView}>
+            <Image
+              style={[styles.frameChild3, styles.frameChildLayout1]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18799.png")}
+            />
+            <Image
+              style={[styles.frameChild4, styles.frameChildLayout1]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18819.png")}
+            />
+            <Image
+              style={[styles.frameChild4, styles.frameChildLayout1]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18806.png")}
+            />
+          </View>
+          <View style={styles.frameView}>
+            <Image
+              style={styles.frameChildLayout}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18802.png")}
+            />
+            <Image
+              style={[styles.frameChild7, styles.frameChildLayout]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18795.png")}
+            />
+            <Image
+              style={[styles.frameChild4, styles.frameChildLayout1]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18815.png")}
+            />
+          </View>
+          <View style={styles.frameView}>
+            <Image
+              style={styles.frameChildLayout}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18803.png")}
+            />
+            <Image
+              style={[styles.frameChild7, styles.frameChildLayout]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18796.png")}
+            />
+            <Image
+              style={[styles.frameChild4, styles.frameChildLayout1]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18816.png")}
+            />
+          </View>
+          <View style={styles.frameView}>
+            <Image
+              style={styles.frameChildLayout}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18804.png")}
+            />
+            <Image
+              style={[styles.frameChild7, styles.frameChildLayout]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18797.png")}
+            />
+            <Image
+              style={[styles.frameChild4, styles.frameChildLayout1]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18817.png")}
+            />
+          </View>
+          <View style={styles.frameView}>
+            <Image
+              style={styles.frameChildLayout}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18807.png")}
+            />
+            <Image
+              style={[styles.frameChild7, styles.frameChildLayout]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-187910.png")}
+            />
+            <Image
+              style={[styles.frameChild4, styles.frameChildLayout1]}
+              resizeMode="cover"
+              source={require("../../assets/rectangle-18818.png")}
+            />
+          </View>
+        </View>
+        <View style={[styles.button1, styles.buttonPosition]}>
+          <Image
+            style={[styles.iconsetplaceholder, styles.leftIconLayout]}
+            resizeMode="cover"
+            source={require("../../assets/iconsetplaceholder1.png")}
+          />
+          <Text style={styles.text4}>Gửi 2</Text>
+          <Image
+            style={[styles.iconsetplaceholder3, styles.leftIconLayout]}
+            resizeMode="cover"
+            source={require("../../assets/iconsetplaceholder1.png")}
+          />
+        </View>
+        <View style={[styles.homeindicator1, styles.closeIcon8Position]}>
+          <View style={[styles.homeIndicator1, styles.homeLayout]} />
+        </View>
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  khungChatBg: {
+    backgroundColor: Color.textWhite,
+    flex: 1,
+  },
+  button1SpaceBlock: {
+    paddingVertical: Padding.p_xs,
+    paddingHorizontal: Padding.p_base,
+  },
+  leftIconLayout: {
+    height: 24,
+    width: 24,
+  },
+  iconLayout2: {
+    width: 12,
+    display: "none",
+    height: 12,
+    overflow: "hidden",
+  },
+  returnVisitorIconLayout: {
+    height: 20,
+    width: 20,
+  },
+  textTypo1: {
+    fontFamily: FontFamily.text14Medium,
+    fontWeight: "500",
+    marginLeft: 8,
+  },
+  iconLayout1: {
+    height: 16,
+    width: 16,
+  },
+  redFlexBox: {
+    paddingVertical: Padding.p_7xs,
+    borderRadius: Border.br_base,
+    paddingHorizontal: Padding.p_5xs,
+    justifyContent: "center",
+    overflow: "hidden",
+    alignItems: "center",
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  labelTypo: {
+    lineHeight: 16,
+    fontSize: FontSize.caption1Regular_size,
+    fontFamily: FontFamily.text14Regular,
+  },
+  logLayout: {
+    width: 343,
+    justifyContent: "center",
+  },
+  bnTypo: {
+    fontFamily: FontFamily.headlineSemiBold,
+    fontWeight: "600",
+  },
+  bnTypo1: {
+    lineHeight: 20,
+    fontSize: FontSize.text14Regular_size,
+    textAlign: "center",
+  },
+  messagecellFlexBox: {
+    marginTop: 20,
+    alignItems: "center",
+    alignSelf: "stretch",
+  },
+  iconLayout: {
+    width: 28,
+    height: 28,
+  },
+  helperTextSpaceBlock: {
+    paddingVertical: Padding.p_5xs,
+    flexDirection: "row",
+  },
+  tiCnHTypo: {
+    maxWidth: 238,
+    lineHeight: 20,
+    fontSize: FontSize.text14Regular_size,
+    fontFamily: FontFamily.text14Regular,
+    textAlign: "left",
+  },
+  avtFlexBox: {
+    paddingBottom: Padding.p_9xs,
+    alignItems: "flex-end",
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  avtFlexBox1: {
+    alignItems: "flex-end",
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  textTypo: {
+    fontSize: FontSize.calloutRegular_size,
+    textAlign: "left",
+    letterSpacing: 0,
+  },
+  composerSpaceBlock: {
+    paddingRight: Padding.p_21xl,
+    flexDirection: "row",
+    borderStyle: "solid",
+    backgroundColor: Color.textWhite,
+  },
+  keysPosition: {
+    left: 3,
+    right: 3,
+    position: "absolute",
+  },
+  letterPosition1: {
+    display: "flex",
+    color: Color.black,
+    fontFamily: FontFamily.defaultRegularTitle2,
+    lineHeight: 28,
+    fontSize: FontSize.defaultRegularTitle2_size,
+    top: "50%",
+    marginTop: -14,
+    textAlign: "center",
+    letterSpacing: 0,
+    justifyContent: "center",
+    alignItems: "center",
+    left: 0,
+    position: "absolute",
+  },
+  keyPosition5: {
+    right: 262,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  keyPosition4: {
+    right: 225,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  keyPosition3: {
+    right: 187,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  keyPosition2: {
+    right: 150,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  keyPosition1: {
+    right: 75,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  keyPosition: {
+    right: 38,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  keyIconLayout: {
+    width: 42,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  letterPosition: {
+    fontFamily: FontFamily.defaultRegularCallout,
+    marginTop: -10,
+    lineHeight: 21,
+    display: "flex",
+    color: Color.black,
+    top: "50%",
+    fontSize: FontSize.calloutRegular_size,
+    textAlign: "center",
+    letterSpacing: 0,
+    justifyContent: "center",
+    alignItems: "center",
+    left: 0,
+    position: "absolute",
+  },
+  keySpaceBlock: {
+    marginLeft: 6,
+    height: 42,
+  },
+  homeindicatorLayout: {
+    height: 34,
+    bottom: 0,
+  },
+  homeLayout: {
+    height: 5,
+    width: 134,
+    borderRadius: Border.br_81xl,
+    backgroundColor: Color.black,
+    left: "50%",
+    bottom: 8,
+    position: "absolute",
+  },
+  homeindicator1Position: {
+    marginLeft: -187.5,
+    left: "50%",
+    width: 375,
+  },
+  leftSideLayout: {
+    height: 21,
+    width: 54,
+    left: "50%",
+    position: "absolute",
+  },
+  text2Position: {
+    top: 1,
+    position: "absolute",
+  },
+  rightSidePosition: {
+    height: 13,
+    left: "50%",
+    position: "absolute",
+  },
+  titleTypo: {
+    fontSize: FontSize.subheadlineSemiBold_size,
+    lineHeight: 20,
+    letterSpacing: 0,
+  },
+  buttonPosition: {
+    zIndex: 2,
+    alignItems: "center",
+    flexDirection: "row",
+    position: "absolute",
+  },
+  closeIcon8Position: {
+    zIndex: 3,
+    position: "absolute",
+  },
+  frameChildLayout2: {
+    height: 124,
+    flex: 1,
+  },
+  frameChildLayout1: {
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  rectanglePosition: {
+    left: "0%",
+    bottom: "0%",
+    right: "0%",
+    top: "0%",
+    height: "100%",
+    position: "absolute",
+    width: "100%",
+  },
+  frameChildLayout: {
+    height: 130,
+    maxWidth: "100%",
+    overflow: "hidden",
+    flex: 1,
+  },
+  leftIcon: {
+    overflow: "hidden",
+  },
+  roommessageavtIcon: {
+    height: 40,
+    width: 40,
+  },
+  mobileIcon: {
+    display: "none",
+    height: 12,
+  },
+  returnVisitorIcon: {
+    display: "none",
+  },
+  lMinhTr: {
+    textAlign: "left",
+    color: Color.textPrimary,
+    lineHeight: 22,
+    letterSpacing: 0,
+    fontSize: FontSize.headlineSemiBold_size,
+    fontWeight: "500",
+  },
+  ficheckSquareIcon: {
+    display: "none",
+    marginLeft: 8,
+    overflow: "hidden",
+  },
+  statusIcon: {
+    width: 8,
+    height: 8,
+    marginLeft: 8,
+  },
+  returnVisitorParent: {
+    marginLeft: 8,
+    alignItems: "center",
+    flexDirection: "row",
+    flex: 1,
+  },
+  name: {
+    alignItems: "center",
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  label: {
+    color: Color.textWhite,
+    fontFamily: FontFamily.text14Regular,
+    textAlign: "left",
+  },
+  closeIcon: {
+    display: "none",
+    height: 12,
+    marginLeft: 8,
+  },
+  purple: {
+    backgroundColor: Color.tagYellow500,
+    paddingVertical: Padding.p_7xs,
+    borderRadius: Border.br_base,
+  },
+  cyan: {
+    backgroundColor: Color.tagCyan500,
+    marginLeft: 2,
+    borderRadius: Border.br_base,
+    paddingVertical: Padding.p_7xs,
+  },
+  yellow: {
+    marginLeft: 2,
+    backgroundColor: Color.tagYellow500,
+    paddingVertical: Padding.p_7xs,
+    borderRadius: Border.br_base,
+    display: "none",
+  },
+  blue: {
+    backgroundColor: Color.tagBlue500,
+    marginLeft: 2,
+    borderRadius: Border.br_base,
+    paddingVertical: Padding.p_7xs,
+    display: "none",
+  },
+  green: {
+    backgroundColor: Color.tagGreen500,
+    marginLeft: 2,
+    borderRadius: Border.br_base,
+    paddingVertical: Padding.p_7xs,
+    display: "none",
+  },
+  red: {
+    backgroundColor: Color.tagRed500,
+    marginLeft: 2,
+    borderRadius: Border.br_base,
+    paddingVertical: Padding.p_7xs,
+    display: "none",
+  },
+  xTag: {
+    backgroundColor: Color.tagGray500,
+    marginLeft: 2,
+    borderRadius: Border.br_base,
+    paddingVertical: Padding.p_7xs,
+  },
+  roomlistNhn: {
+    marginTop: 4,
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  nameParent: {
+    marginLeft: 8,
+    justifyContent: "center",
+    flex: 1,
+  },
+  room: {
+    marginLeft: 10,
+    alignItems: "center",
+    flexDirection: "row",
+    flex: 1,
+  },
+  thmNHng: {
+    marginLeft: 10,
+  },
+  optionsVerticalIcon: {
+    marginLeft: 10,
+    overflow: "hidden",
+  },
+  roomheader: {
+    alignItems: "center",
+    flexDirection: "row",
+    borderBottomWidth: 1,
+    borderColor: Color.divider,
+    borderStyle: "solid",
+    paddingVertical: Padding.p_xs,
+    alignSelf: "stretch",
+  },
+  time: {
+    fontSize: FontSize.footnoteRegular_size,
+    lineHeight: 18,
+    textAlign: "center",
+    color: Color.textSecondary,
+    fontFamily: FontFamily.text14Regular,
+    letterSpacing: 0,
+  },
+  bn: {
+    color: Color.brandPrimary,
+    lineHeight: 20,
+    fontSize: FontSize.text14Regular_size,
+    textAlign: "center",
+    letterSpacing: 0,
+  },
+  honTtCuc: {
+    width: 173,
+    marginLeft: 2,
+    fontFamily: FontFamily.text14Regular,
+    color: Color.textPrimary,
+  },
+  logMessagenormal: {
+    display: "none",
+    flexDirection: "row",
+  },
+  messagelogAction: {
+    alignItems: "center",
+    alignSelf: "stretch",
+  },
+  avtIcon: {
+    borderRadius: Border.br_11xl,
+    height: 28,
+  },
+  huongnt256: {
+    color: Color.brandPrimary,
+    lineHeight: 20,
+    fontSize: FontSize.text14Regular_size,
+    textAlign: "center",
+    letterSpacing: 0,
+    display: "none",
+    marginLeft: 8,
+  },
+  tiCnH: {
+    color: Color.textColorPrimary,
+  },
+  messageTypetext: {
+    maxWidth: 270,
+    justifyContent: "center",
+    paddingHorizontal: Padding.p_base,
+    alignItems: "center",
+  },
+  messageitem: {
+    backgroundColor: Color.tagGray100,
+    borderRadius: Border.br_xl,
+    marginLeft: 8,
+    overflow: "hidden",
+    flexDirection: "row",
+  },
+  messagecell: {
+    overflow: "hidden",
+    flexDirection: "row",
+  },
+  tiCnH1: {
+    color: Color.textWhite,
+  },
+  messageitem1: {
+    backgroundColor: Color.brandPrimary,
+    justifyContent: "flex-end",
+    borderRadius: Border.br_xl,
+    overflow: "hidden",
+    flexDirection: "row",
+  },
+  status: {
+    marginLeft: 4,
+  },
+  messagecell1: {
+    justifyContent: "flex-end",
+    overflow: "hidden",
+    flexDirection: "row",
+  },
+  btnIcon: {
+    borderRadius: Border.br_xl,
+    height: 28,
+  },
+  frameChild: {
+    width: 49,
+    height: 2,
+    backgroundColor: Color.brandPrimary,
+    display: "none",
+  },
+  frameItem: {
+    width: 10,
+    height: 10,
+  },
+  frameInner: {
+    backgroundColor: Color.lineAudioLength,
+    height: 1,
+    flex: 1,
+  },
+  rectangleParent: {
+    marginLeft: 8,
+    alignItems: "center",
+    flexDirection: "row",
+    alignSelf: "stretch",
+    flex: 1,
+  },
+  text: {
+    lineHeight: 24,
+    color: Color.textWhite,
+    fontFamily: FontFamily.text14Medium,
+    fontWeight: "500",
+    marginLeft: 8,
+  },
+  record: {
+    width: 254,
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  closeIcon7: {
+    marginLeft: 16,
+    display: "none",
+    overflow: "hidden",
+  },
+  messageTypeaudio: {
+    paddingVertical: Padding.p_9xs,
+    borderRadius: Border.br_5xs,
+    paddingHorizontal: Padding.p_5xs,
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  logMessagenormal1: {
+    flexDirection: "row",
+  },
+  messagelogAction1: {
+    display: "none",
+  },
+  layoutBlocksVertical: {
+    flex: 1,
+  },
+  khungChat: {
+    paddingTop: Padding.p_base,
+    paddingBottom: Padding.p_21xl,
+    alignItems: "flex-end",
+    justifyContent: "center",
+    overflow: "hidden",
+    paddingHorizontal: Padding.p_base,
+    flexDirection: "row",
+    alignSelf: "stretch",
+    flex: 1,
+  },
+  description: {
+    fontFamily: FontFamily.text14Regular,
+    color: Color.textPrimary,
+    flex: 1,
+  },
+  helperText: {
+    backgroundColor: Color.neutral3F5F5F5,
+    display: "none",
+    paddingHorizontal: Padding.p_base,
+    width: 375,
+  },
+  imageIcon: {
+    display: "none",
+    overflow: "hidden",
+  },
+  cameraIcon: {
+    marginLeft: 12,
+    display: "none",
+    overflow: "hidden",
+  },
+  icon: {
+    marginLeft: 12,
+    justifyContent: "center",
+    height: 40,
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  iconsendPlaneFill: {
+    overflow: "hidden",
+  },
+  send: {
+    shadowColor: "rgba(0, 0, 0, 0.04)",
+    padding: Padding.p_2xs,
+    shadowOpacity: 1,
+    elevation: 0,
+    shadowRadius: 0,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    borderRadius: Border.br_5xl,
+    marginLeft: 12,
+    backgroundColor: Color.brandPrimary,
+    display: "none",
+    justifyContent: "center",
+    height: 40,
+    width: 40,
+    overflow: "hidden",
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  text1: {
+    color: Color.brandPrimary,
+  },
+  nhpTinNhn: {
+    color: Color.textSecondary,
+  },
+  nhpTinNhnContainer: {
+    fontFamily: FontFamily.text14Regular,
+    lineHeight: 22,
+  },
+  nhpTinNhnWrapper: {
+    maxHeight: 72,
+    zIndex: 0,
+    alignItems: "center",
+    flexDirection: "row",
+    flex: 1,
+  },
+  emojiIcon: {
+    right: 8,
+    zIndex: 1,
+    bottom: 8,
+    overflow: "hidden",
+    height: 24,
+    width: 24,
+    position: "absolute",
+  },
+  composer: {
+    borderColor: Color.colorWhitesmoke_100,
+    borderWidth: 1,
+    paddingLeft: Padding.p_5xs,
+    paddingTop: Padding.p_4xs,
+    paddingBottom: Padding.p_4xs,
+    marginLeft: 12,
+    borderRadius: Border.br_5xs,
+    alignItems: "center",
+    flex: 1,
+  },
+  icon1: {
+    marginLeft: 12,
+    height: 40,
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  composeBar1: {
+    paddingHorizontal: Padding.p_xs,
+    backgroundColor: Color.neutral3F5F5F5,
+    alignItems: "flex-end",
+    width: 375,
+  },
+  keycontainerShadowBox1: {
+    shadowColor: "rgba(0, 0, 0, 0.3)",
+    borderRadius: Border.br_8xs_6,
+    left: "0%",
+    bottom: "0%",
+    right: "0%",
+    top: "0%",
+    height: "100%",
+    shadowOpacity: 1,
+    elevation: 0,
+    shadowRadius: 0,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    position: "absolute",
+    width: "100%",
+    backgroundColor: Color.textWhite,
+  },
+  letter: {
+    width: 32,
+  },
+  key: {
+    right: 337,
+    height: 42,
+    top: 0,
+    left: 0,
+    position: "absolute",
+  },
+  letter1: {
+    width: 31,
+  },
+  key1: {
+    right: 300,
+    left: 38,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  key2: {
+    left: 75,
+  },
+  key3: {
+    left: 113,
+  },
+  key4: {
+    left: 150,
+  },
+  key5: {
+    left: 188,
+  },
+  key6: {
+    right: 113,
+    left: 225,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  key7: {
+    left: 262,
+  },
+  key8: {
+    left: 300,
+  },
+  key9: {
+    left: 337,
+    height: 42,
+    right: 0,
+    top: 0,
+    position: "absolute",
+  },
+  topRow: {
+    height: 42,
+    right: 0,
+    top: 0,
+    left: 0,
+    position: "absolute",
+  },
+  key10: {
+    right: 299,
+    height: 42,
+    top: 0,
+    left: 0,
+    position: "absolute",
+  },
+  key11: {
+    left: 38,
+  },
+  key12: {
+    left: 75,
+  },
+  key13: {
+    left: 112,
+  },
+  key14: {
+    left: 150,
+  },
+  key15: {
+    right: 112,
+    left: 187,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  key16: {
+    left: 225,
+  },
+  key17: {
+    left: 262,
+  },
+  key18: {
+    left: 299,
+    height: 42,
+    right: 0,
+    top: 0,
+    position: "absolute",
+  },
+  middleRow: {
+    top: 54,
+    right: 19,
+    left: 19,
+    height: 42,
+    position: "absolute",
+  },
+  key19: {
+    right: 222,
+    height: 42,
+    top: 0,
+    left: 0,
+    position: "absolute",
+  },
+  letter20: {
+    width: 30,
+  },
+  key20: {
+    right: 186,
+    left: 37,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  key21: {
+    right: 149,
+    left: 73,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  letter22: {
+    width: 33,
+  },
+  key22: {
+    right: 110,
+    left: 110,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  key23: {
+    right: 74,
+    left: 149,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  key24: {
+    right: 37,
+    left: 185,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  key25: {
+    left: 222,
+    height: 42,
+    right: 0,
+    top: 0,
+    position: "absolute",
+  },
+  keys1: {
+    right: 58,
+    left: 58,
+    height: 42,
+    top: 0,
+    position: "absolute",
+  },
+  keyIcon: {
+    left: 0,
+  },
+  keyIcon1: {
+    right: 0,
+  },
+  bottomRow: {
+    top: 108,
+    height: 42,
+    right: 0,
+    left: 0,
+    position: "absolute",
+  },
+  keys: {
+    top: 8,
+    height: 150,
+  },
+  keycontainerShadowBox: {
+    backgroundColor: Color.colorDarkgray_100,
+    shadowColor: "rgba(0, 0, 0, 0.3)",
+    borderRadius: Border.br_8xs_6,
+    left: "0%",
+    bottom: "0%",
+    right: "0%",
+    top: "0%",
+    height: "100%",
+    shadowOpacity: 1,
+    elevation: 0,
+    shadowRadius: 0,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    position: "absolute",
+    width: "100%",
+  },
+  letter26: {
+    width: 91,
+  },
+  key26: {
+    width: 91,
+    height: 42,
+  },
+  letter27: {
+    width: 175,
+  },
+  key27: {
+    flex: 1,
+  },
+  key28: {
+    width: 91,
+  },
+  bottomRow1: {
+    top: 170,
+    flexDirection: "row",
+  },
+  iconEmoji: {
+    height: 27,
+    width: 27,
+  },
+  iconDictation: {
+    width: 19,
+    height: 28,
+  },
+  emojiDictation: {
+    top: 235,
+    right: 31,
+    left: 31,
+    justifyContent: "space-between",
+    flexDirection: "row",
+    position: "absolute",
+  },
+  homeIndicator: {
+    marginLeft: -67,
+  },
+  homeindicator: {
+    left: 1,
+    right: 0,
+    position: "absolute",
+  },
+  alphabetickeyboard: {
+    backgroundColor: Color.colorLightgray_100,
+    height: 278,
+    overflow: "hidden",
+    width: 375,
+  },
+  composeBar: {
+    backgroundColor: Color.neutral3F5F5F5,
+    justifyContent: "flex-end",
+  },
+  roomheaderParent: {
+    top: 47,
+    height: 765,
+    width: 375,
+    left: 0,
+    position: "absolute",
+  },
+  notchIcon: {
+    marginLeft: -81.5,
+    top: -2,
+    width: 164,
+    height: 32,
+    left: "50%",
+    display: "none",
+    position: "absolute",
+  },
+  text2: {
+    color: Color.colorGray_200,
+    width: 54,
+    top: 1,
+    fontFamily: FontFamily.defaultRegularCallout,
+    fontWeight: "600",
+    textAlign: "center",
+    lineHeight: 22,
+    letterSpacing: 0,
+    fontSize: FontSize.headlineSemiBold_size,
+    height: 20,
+    left: 0,
+  },
+  statusbarTime: {
+    marginLeft: -27,
+    top: 0,
+    borderRadius: Border.br_5xl,
+    height: 21,
+  },
+  leftSide: {
+    marginLeft: -162.5,
+    top: 14,
+  },
+  batteryIcon: {
+    marginLeft: 11.3,
+    width: 27,
+    top: 0,
+  },
+  wifiIcon: {
+    width: 17,
+    height: 12,
+  },
+  iconMobileSignal: {
+    marginLeft: -38.7,
+    width: 18,
+    left: "50%",
+    height: 12,
+  },
+  rightSide: {
+    marginLeft: 86.5,
+    top: 19,
+    width: 77,
+  },
+  statusbarIphone13: {
+    height: 47,
+    top: 0,
+    overflow: "hidden",
+    position: "absolute",
+  },
+  chiTitRoomChaNhpTextCChild: {
+    width: 374,
+    height: 801,
+    opacity: 0.4,
+    backgroundColor: Color.black,
+    top: 0,
+    left: 0,
+    position: "absolute",
+  },
+  leftIcon1: {
+    zIndex: 0,
+    overflow: "hidden",
+  },
+  title: {
+    maxWidth: 260,
+    fontFamily: FontFamily.headlineSemiBold,
+    fontWeight: "600",
+    textAlign: "center",
+    color: Color.textPrimary,
+    overflow: "hidden",
+    width: "100%",
+  },
+  titleWrapper: {
+    maxWidth: 295,
+    zIndex: 1,
+    alignItems: "center",
+    flex: 1,
+  },
+  iconsetplaceholder: {
+    display: "none",
+  },
+  text3: {
+    marginLeft: 4,
+    color: Color.brandPrimary,
+    fontFamily: FontFamily.headlineSemiBold,
+    fontWeight: "600",
+    textAlign: "left",
+  },
+  iconsetplaceholder1: {
+    marginLeft: 4,
+    display: "none",
+  },
+  button: {
+    borderRadius: Border.br_9xs,
+    paddingHorizontal: 0,
+    paddingVertical: Padding.p_11xs,
+    right: 16,
+    top: 20,
+    display: "none",
+    justifyContent: "flex-end",
+  },
+  closeIcon8: {
+    opacity: 0,
+    right: 16,
+    top: 20,
+    display: "none",
+    overflow: "hidden",
+    height: 24,
+    width: 24,
+  },
+  actionSheetheader: {
+    borderTopLeftRadius: Border.br_sm,
+    borderTopRightRadius: Border.br_sm,
+    paddingLeft: Padding.p_base,
+    paddingTop: Padding.p_xl,
+    paddingBottom: Padding.p_5xs,
+    zIndex: 0,
+    justifyContent: "center",
+    borderBottomWidth: 1,
+    borderColor: Color.divider,
+    width: 375,
+  },
+  chpNh: {
+    textAlign: "center",
+    color: Color.textSecondary,
+    fontFamily: FontFamily.text14Regular,
+  },
+  cameraParent: {
+    backgroundColor: Color.backgroundGrayF8F8F8,
+    paddingVertical: Padding.p_21xl,
+    justifyContent: "center",
+    overflow: "hidden",
+    alignItems: "center",
+    alignSelf: "stretch",
+    flex: 1,
+  },
+  rectangleIcon: {
+    maxHeight: "100%",
+    left: "0%",
+    bottom: "0%",
+    right: "0%",
+    top: "0%",
+    height: "100%",
+    position: "absolute",
+    width: "100%",
+  },
+  rectangleView: {
+    backgroundColor: Color.colorGray_1100,
+  },
+  number: {
+    textAlign: "center",
+    color: Color.textWhite,
+    fontFamily: FontFamily.text14Regular,
+  },
+  badge: {
+    top: 53,
+    left: 53,
+    borderRadius: Border.br_xs,
+    paddingHorizontal: Padding.p_6xs,
+    paddingVertical: Padding.p_11xs,
+    backgroundColor: Color.brandPrimary,
+    justifyContent: "center",
+    overflow: "hidden",
+    width: 24,
+    alignItems: "center",
+    position: "absolute",
+  },
+  rectangleGroup: {
+    marginLeft: 1,
+  },
+  frameGroup: {
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  frameChild3: {
+    height: 124,
+    flex: 1,
+  },
+  frameChild4: {
+    marginLeft: 1,
+    height: 124,
+    flex: 1,
+  },
+  frameView: {
+    marginTop: 1,
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  frameChild7: {
+    marginLeft: 1,
+  },
+  frameParent: {
+    zIndex: 1,
+    overflow: "hidden",
+    alignItems: "center",
+    width: 375,
+    flex: 1,
+  },
+  text4: {
+    lineHeight: 21,
+    fontSize: FontSize.calloutRegular_size,
+    color: Color.textWhite,
+    fontFamily: FontFamily.text14Regular,
+    textAlign: "left",
+    letterSpacing: 0,
+    marginLeft: 8,
+  },
+  iconsetplaceholder3: {
+    display: "none",
+    marginLeft: 8,
+  },
+  button1: {
+    marginLeft: -171.5,
+    bottom: 34,
+    height: 44,
+    left: "50%",
+    borderRadius: Border.br_5xs,
+    backgroundColor: Color.brandPrimary,
+    width: 343,
+    justifyContent: "center",
+    paddingVertical: Padding.p_xs,
+    paddingHorizontal: Padding.p_base,
+  },
+  homeIndicator1: {
+    marginLeft: -66.5,
+  },
+  homeindicator1: {
+    marginLeft: -187.5,
+    left: "50%",
+    width: 375,
+    height: 34,
+    bottom: 0,
+  },
+  actionSheetthVinNh: {
+    top: 60,
+    height: 752,
+    left: 0,
+    position: "absolute",
+  },
+  chiTitRoomChaNhpTextC: {
+    width: "100%",
+    height: 681,
+  },
+});
+
+export default ChiTitRoomChaNhpTextC;

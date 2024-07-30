@@ -1,0 +1,1001 @@
+import * as React from "react";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { Color, Padding, FontFamily, Border, FontSize } from "../../GlobalStyles";
+
+const SaoChpTinNhn = () => {
+  return (
+    <View style={[styles.saoChpTinNhn, styles.composerBg]}>
+      <View style={styles.roomheaderParent}>
+        <View style={[styles.roomheader, styles.toastSpaceBlock]}>
+          <Image
+            style={[styles.leftIcon, styles.iconLayout2]}
+            resizeMode="cover"
+            source={require("../../assets/27-left1.png")}
+          />
+          <View style={styles.room}>
+            <Image
+              style={styles.roommessageavtIcon}
+              resizeMode="cover"
+              source={require("../../assets/roommessageavt23.png")}
+            />
+            <View style={styles.nameParent}>
+              <View style={styles.name}>
+                <Image
+                  style={[styles.mobileIcon, styles.iconLayout1]}
+                  resizeMode="cover"
+                  source={require("../../assets/mobile1.png")}
+                />
+                <View style={styles.returnVisitorParent}>
+                  <Image
+                    style={[styles.returnVisitorIcon, styles.iconLayout]}
+                    resizeMode="cover"
+                    source={require("../../assets/return-visitor1.png")}
+                  />
+                  <Text style={[styles.lMinhTr, styles.minhTypo]}>
+                    Lê Minh Trí
+                  </Text>
+                  <Image
+                    style={[
+                      styles.ficheckSquareIcon,
+                      styles.messagestatusLayout,
+                    ]}
+                    resizeMode="cover"
+                    source={require("../../assets/fichecksquare.png")}
+                  />
+                  <Image
+                    style={styles.statusIcon}
+                    resizeMode="cover"
+                    source={require("../../assets/status.png")}
+                  />
+                </View>
+              </View>
+              <View style={[styles.roomlistNhn, styles.replyitemSpaceBlock]}>
+                <View style={[styles.purple, styles.redFlexBox]}>
+                  <Text style={styles.label}>KH VIP</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.cyan, styles.redFlexBox]}>
+                  <Text style={styles.label}>Tư vấn sp</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.yellow, styles.redFlexBox]}>
+                  <Text style={styles.label}>chưa đóng phí</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.blue, styles.redFlexBox]}>
+                  <Text style={styles.label}>Có sđt</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.green, styles.redFlexBox]}>
+                  <Text style={styles.label}>chưa gọi</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.red, styles.redFlexBox]}>
+                  <Text style={styles.label}>liên hệ lại</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+                <View style={[styles.xTag, styles.redFlexBox]}>
+                  <Text style={styles.label}>+4</Text>
+                  <Image
+                    style={[styles.closeIcon, styles.iconLayout1]}
+                    resizeMode="cover"
+                    source={require("../../assets/23-close1.png")}
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+          <Image
+            style={[styles.thmNHng, styles.iconLayout2]}
+            resizeMode="cover"
+            source={require("../../assets/thm-n-hng.png")}
+          />
+          <Image
+            style={[styles.optionsVerticalIcon, styles.iconLayout2]}
+            resizeMode="cover"
+            source={require("../../assets/optionsvertical.png")}
+          />
+        </View>
+        <View style={[styles.khungChat, styles.composerBg]}>
+          <View style={styles.layoutBlocksVertical}>
+            <View style={styles.messagelogAction}>
+              <Text style={[styles.time, styles.timeClr]}>12:05</Text>
+              <View style={[styles.logMessagenormal, styles.logLayout]}>
+                <Text style={styles.bnTypo}>Bạn</Text>
+                <Text style={[styles.honTtCuc, styles.angTrLiTypo]}>
+                  đã hoàn tất cuộc hội thoại
+                </Text>
+              </View>
+            </View>
+            <View style={[styles.messagecell, styles.messagecellFlexBox]}>
+              <View style={styles.avtFlexBox}>
+                <Image
+                  style={styles.avtIcon}
+                  resizeMode="cover"
+                  source={require("../../assets/avt1.png")}
+                />
+              </View>
+              <Text style={[styles.huongnt256, styles.bnTypo]}>HuongNT256</Text>
+              <View style={styles.messageitem}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH, styles.tiCnHTypo]}>
+                    Tôi cần hỗ trợ
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View style={[styles.messagecell1, styles.messagecellFlexBox]}>
+              <View style={styles.messageitemFlexBox}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH1, styles.tiCnHTypo]}>
+                    Chào bạn, tôi có thể giúp gì cho bạn
+                  </Text>
+                </View>
+              </View>
+              <View style={[styles.status, styles.avtFlexBox]}>
+                <View style={styles.messagestatusLayout} />
+              </View>
+            </View>
+            <View style={[styles.messagecell, styles.messagecellFlexBox]}>
+              <View style={styles.avtFlexBox}>
+                <Image
+                  style={styles.avtIcon}
+                  resizeMode="cover"
+                  source={require("../../assets/avt1.png")}
+                />
+              </View>
+              <Text style={[styles.huongnt256, styles.bnTypo]}>HuongNT256</Text>
+              <View style={styles.messageitem}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH, styles.tiCnHTypo]}>
+                    Tôi muốn tìm hiểu về sản phẩm dịch vụ bên bạn, vui lòng tư
+                    vấn giúp tôi
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View style={[styles.messagecell1, styles.messagecellFlexBox]}>
+              <View style={styles.messageitemFlexBox}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH1, styles.tiCnHTypo]}>
+                    Cảm ơn bạn đã quan tâm
+                  </Text>
+                </View>
+              </View>
+              <View style={[styles.status, styles.avtFlexBox]}>
+                <View style={styles.messagestatusLayout} />
+              </View>
+            </View>
+            <View style={[styles.messagecell, styles.messagecellFlexBox]}>
+              <View style={styles.avtFlexBox}>
+                <Image
+                  style={styles.avtIcon}
+                  resizeMode="cover"
+                  source={require("../../assets/avt1.png")}
+                />
+              </View>
+              <Text style={[styles.huongnt256, styles.bnTypo]}>HuongNT256</Text>
+              <View style={styles.messageitem}>
+                <View
+                  style={[styles.messageTypetext, styles.helperTextSpaceBlock]}
+                >
+                  <Text style={[styles.tiCnH, styles.tiCnHTypo]}>
+                    Gửi cho tôi xin thông tin
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View style={[styles.messagecell1, styles.messagecellFlexBox]}>
+              <View style={styles.replyMessageWrapper}>
+                <View style={styles.replyMessageWrapper}>
+                  <View style={styles.replyMessageWrapper}>
+                    <View style={styles.replytitle}>
+                      <Image
+                        style={[styles.replyFillIcon, styles.iconLayout1]}
+                        resizeMode="cover"
+                        source={require("../../assets/reply-fill.png")}
+                      />
+                      <Text style={[styles.lMinhTr1, styles.trLiTypo]}>
+                        Bạn
+                      </Text>
+                      <Text style={[styles.trLi, styles.timeClr]}>
+                        đã trả lời
+                      </Text>
+                      <Text style={[styles.lMinhTr1, styles.trLiTypo]}>
+                        Lê Minh Trí
+                      </Text>
+                    </View>
+                    <View
+                      style={[styles.replyitem, styles.replyitemSpaceBlock]}
+                    >
+                      <View style={styles.replyType}>
+                        <Text
+                          style={[styles.replyMessage1, styles.tiCnHTypo]}
+                          numberOfLines={1}
+                        >
+                          Tôi cần hỗ trợ
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={[styles.messageitem5, styles.messageitemFlexBox]}
+                  >
+                    <View
+                      style={[
+                        styles.messageTypetext,
+                        styles.helperTextSpaceBlock,
+                      ]}
+                    >
+                      <Text style={[styles.tiCnH1, styles.tiCnHTypo]}>
+                        Reply tin nhắn văn bản
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View style={[styles.status, styles.avtFlexBox1]}>
+                <Image
+                  style={styles.messagestatusLayout}
+                  resizeMode="cover"
+                  source={require("../../assets/messagestatus.png")}
+                />
+              </View>
+            </View>
+            <View style={[styles.messagelogAction1, styles.messagecellFlexBox]}>
+              <Text style={[styles.time, styles.timeClr]}>12:05</Text>
+              <View style={[styles.logMessagenormal1, styles.logLayout]}>
+                <Text style={styles.bnTypo}>Bạn</Text>
+                <Text style={[styles.honTtCuc, styles.angTrLiTypo]}>
+                  đã hoàn tất cuộc hội thoại
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View style={styles.composeBar}>
+          <View style={[styles.helperText, styles.helperTextSpaceBlock]}>
+            <View style={styles.layoutBlocksVertical}>
+              <View style={styles.replytitle}>
+                <Text style={[styles.angTrLi, styles.angTrLiTypo]}>
+                  Đang trả lời
+                </Text>
+                <Text style={styles.chnhBn}>Lê Minh Trí</Text>
+              </View>
+              <Text style={[styles.tiMunTm, styles.timeClr]} numberOfLines={1}>
+                Tôi cần hỗ trợ
+              </Text>
+            </View>
+            <Image
+              style={[styles.validateIcon, styles.iconLayout]}
+              resizeMode="cover"
+              source={require("../../assets/validate10.png")}
+            />
+          </View>
+          <View style={[styles.composeBar1, styles.helperTextSpaceBlock]}>
+            <View style={styles.icon}>
+              <Image
+                style={[styles.leftIcon, styles.iconLayout2]}
+                resizeMode="cover"
+                source={require("../../assets/plus.png")}
+              />
+            </View>
+            <View style={[styles.composer, styles.icon1FlexBox]}>
+              <View style={styles.nhpTinNhnWrapper}>
+                <Text style={[styles.nhpTinNhn, styles.titleTypo]}>
+                  Nhập tin nhắn
+                </Text>
+              </View>
+              <Image
+                style={[styles.emojiIcon, styles.emojiIconPosition]}
+                resizeMode="cover"
+                source={require("../../assets/emoji111.png")}
+              />
+            </View>
+            <View style={[styles.icon1, styles.icon1FlexBox]}>
+              <Image
+                style={[styles.leftIcon, styles.iconLayout2]}
+                resizeMode="cover"
+                source={require("../../assets/camera1.png")}
+              />
+            </View>
+            <View style={[styles.icon1, styles.icon1FlexBox]}>
+              <Image
+                style={[styles.leftIcon, styles.iconLayout2]}
+                resizeMode="cover"
+                source={require("../../assets/mic3.png")}
+              />
+            </View>
+          </View>
+          <View style={styles.homeindicator}>
+            <View style={[styles.homeIndicator, styles.emojiIconPosition]} />
+          </View>
+        </View>
+      </View>
+      <View style={[styles.statusbarIphone13, styles.toastPosition]}>
+        <Image
+          style={[styles.notchIcon, styles.toastPosition]}
+          resizeMode="cover"
+          source={require("../../assets/notch1.png")}
+        />
+        <View style={[styles.leftSide, styles.leftSideLayout]}>
+          <View style={[styles.statusbarTime, styles.leftSideLayout]}>
+            <Text style={[styles.text, styles.textPosition]}>9:41</Text>
+          </View>
+        </View>
+        <View style={[styles.rightSide, styles.rightSidePosition]}>
+          <Image
+            style={[styles.batteryIcon, styles.rightSidePosition]}
+            resizeMode="cover"
+            source={require("../../assets/battery.png")}
+          />
+          <Image
+            style={styles.wifiIcon}
+            resizeMode="cover"
+            source={require("../../assets/wifi.png")}
+          />
+          <Image
+            style={[styles.iconMobileSignal, styles.textPosition]}
+            resizeMode="cover"
+            source={require("../../assets/icon--mobile-signal.png")}
+          />
+        </View>
+      </View>
+      <View style={[styles.toast, styles.logLayout]}>
+        <Image
+          style={styles.iconContainer}
+          resizeMode="cover"
+          source={require("../../assets/icon-container20.png")}
+        />
+        <View style={styles.titleParent}>
+          <Text style={[styles.title, styles.titleTypo]}>
+            Đã sao chép tin nhắn
+          </Text>
+          <Text style={[styles.description, styles.angTrLiTypo]}>
+            The list has been saved.
+          </Text>
+        </View>
+        <Image
+          style={[styles.closeIcon7, styles.iconLayout]}
+          resizeMode="cover"
+          source={require("../../assets/23-close5.png")}
+        />
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  composerBg: {
+    backgroundColor: Color.textWhite,
+    flex: 1,
+  },
+  toastSpaceBlock: {
+    paddingVertical: Padding.p_xs,
+    paddingHorizontal: Padding.p_base,
+    alignItems: "center",
+  },
+  iconLayout2: {
+    height: 24,
+    width: 24,
+  },
+  iconLayout1: {
+    width: 12,
+    height: 12,
+    overflow: "hidden",
+  },
+  iconLayout: {
+    height: 20,
+    width: 20,
+  },
+  minhTypo: {
+    fontFamily: FontFamily.text14Medium,
+    fontWeight: "500",
+  },
+  messagestatusLayout: {
+    height: 16,
+    width: 16,
+  },
+  replyitemSpaceBlock: {
+    marginTop: 4,
+    flexDirection: "row",
+  },
+  redFlexBox: {
+    paddingVertical: Padding.p_7xs,
+    paddingHorizontal: Padding.p_5xs,
+    borderRadius: Border.br_base,
+    justifyContent: "center",
+    overflow: "hidden",
+    alignItems: "center",
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  timeClr: {
+    color: Color.textSecondary,
+    fontFamily: FontFamily.text14Regular,
+  },
+  logLayout: {
+    width: 343,
+    flexDirection: "row",
+  },
+  angTrLiTypo: {
+    lineHeight: 20,
+    fontSize: FontSize.text14Regular_size,
+    fontFamily: FontFamily.text14Regular,
+  },
+  messagecellFlexBox: {
+    marginTop: 20,
+    alignItems: "center",
+    alignSelf: "stretch",
+  },
+  bnTypo: {
+    color: Color.brandPrimary,
+    fontFamily: FontFamily.headlineSemiBold,
+    fontWeight: "600",
+    lineHeight: 20,
+    fontSize: FontSize.text14Regular_size,
+    textAlign: "center",
+    letterSpacing: 0,
+  },
+  helperTextSpaceBlock: {
+    paddingVertical: Padding.p_5xs,
+    flexDirection: "row",
+  },
+  tiCnHTypo: {
+    maxWidth: 238,
+    lineHeight: 20,
+    fontSize: FontSize.text14Regular_size,
+    fontFamily: FontFamily.text14Regular,
+    textAlign: "left",
+  },
+  avtFlexBox: {
+    paddingBottom: Padding.p_9xs,
+    alignItems: "flex-end",
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  avtFlexBox1: {
+    alignItems: "flex-end",
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  trLiTypo: {
+    lineHeight: 16,
+    fontSize: FontSize.caption1Regular_size,
+    textAlign: "left",
+  },
+  messageitemFlexBox: {
+    backgroundColor: Color.brandPrimary,
+    justifyContent: "flex-end",
+    borderRadius: Border.br_xl,
+    overflow: "hidden",
+    flexDirection: "row",
+  },
+  icon1FlexBox: {
+    marginLeft: 12,
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  titleTypo: {
+    fontSize: FontSize.calloutRegular_size,
+    textAlign: "left",
+    letterSpacing: 0,
+  },
+  emojiIconPosition: {
+    bottom: 8,
+    position: "absolute",
+  },
+  toastPosition: {
+    position: "absolute",
+    left: "50%",
+  },
+  leftSideLayout: {
+    height: 21,
+    width: 54,
+    left: "50%",
+    position: "absolute",
+  },
+  textPosition: {
+    top: 1,
+    position: "absolute",
+  },
+  rightSidePosition: {
+    height: 13,
+    left: "50%",
+    position: "absolute",
+  },
+  leftIcon: {
+    overflow: "hidden",
+  },
+  roommessageavtIcon: {
+    width: 40,
+    height: 40,
+  },
+  mobileIcon: {
+    display: "none",
+    height: 12,
+  },
+  returnVisitorIcon: {
+    display: "none",
+  },
+  lMinhTr: {
+    textAlign: "left",
+    color: Color.textPrimary,
+    lineHeight: 22,
+    letterSpacing: 0,
+    fontSize: FontSize.headlineSemiBold_size,
+    fontWeight: "500",
+    marginLeft: 8,
+  },
+  ficheckSquareIcon: {
+    display: "none",
+    marginLeft: 8,
+    overflow: "hidden",
+  },
+  statusIcon: {
+    width: 8,
+    height: 8,
+    marginLeft: 8,
+  },
+  returnVisitorParent: {
+    marginLeft: 8,
+    alignItems: "center",
+    flexDirection: "row",
+    flex: 1,
+  },
+  name: {
+    alignItems: "center",
+    flexDirection: "row",
+    alignSelf: "stretch",
+  },
+  label: {
+    color: Color.textWhite,
+    fontFamily: FontFamily.text14Regular,
+    lineHeight: 16,
+    fontSize: FontSize.caption1Regular_size,
+    textAlign: "left",
+  },
+  closeIcon: {
+    display: "none",
+    height: 12,
+    marginLeft: 8,
+  },
+  purple: {
+    backgroundColor: Color.tagYellow500,
+    paddingHorizontal: Padding.p_5xs,
+    borderRadius: Border.br_base,
+  },
+  cyan: {
+    backgroundColor: Color.tagCyan500,
+    marginLeft: 2,
+    paddingHorizontal: Padding.p_5xs,
+    borderRadius: Border.br_base,
+  },
+  yellow: {
+    marginLeft: 2,
+    backgroundColor: Color.tagYellow500,
+    paddingHorizontal: Padding.p_5xs,
+    borderRadius: Border.br_base,
+    display: "none",
+  },
+  blue: {
+    backgroundColor: Color.tagBlue500,
+    marginLeft: 2,
+    paddingHorizontal: Padding.p_5xs,
+    borderRadius: Border.br_base,
+    display: "none",
+  },
+  green: {
+    backgroundColor: Color.tagGreen500,
+    marginLeft: 2,
+    paddingHorizontal: Padding.p_5xs,
+    borderRadius: Border.br_base,
+    display: "none",
+  },
+  red: {
+    backgroundColor: Color.tagRed500,
+    marginLeft: 2,
+    paddingHorizontal: Padding.p_5xs,
+    borderRadius: Border.br_base,
+    display: "none",
+  },
+  xTag: {
+    backgroundColor: Color.tagGray500,
+    marginLeft: 2,
+    paddingHorizontal: Padding.p_5xs,
+    borderRadius: Border.br_base,
+  },
+  roomlistNhn: {
+    alignSelf: "stretch",
+  },
+  nameParent: {
+    marginLeft: 8,
+    justifyContent: "center",
+    flex: 1,
+  },
+  room: {
+    marginLeft: 10,
+    alignItems: "center",
+    flexDirection: "row",
+    flex: 1,
+  },
+  thmNHng: {
+    marginLeft: 10,
+  },
+  optionsVerticalIcon: {
+    marginLeft: 10,
+    overflow: "hidden",
+  },
+  roomheader: {
+    borderColor: Color.divider,
+    borderBottomWidth: 1,
+    flexDirection: "row",
+    borderStyle: "solid",
+    alignSelf: "stretch",
+  },
+  time: {
+    fontSize: FontSize.footnoteRegular_size,
+    lineHeight: 18,
+    textAlign: "center",
+    letterSpacing: 0,
+  },
+  honTtCuc: {
+    width: 173,
+    textAlign: "center",
+    marginLeft: 2,
+    color: Color.textPrimary,
+  },
+  logMessagenormal: {
+    display: "none",
+    justifyContent: "center",
+  },
+  messagelogAction: {
+    alignItems: "center",
+    alignSelf: "stretch",
+  },
+  avtIcon: {
+    borderRadius: Border.br_11xl,
+    width: 28,
+    height: 28,
+  },
+  huongnt256: {
+    display: "none",
+    marginLeft: 8,
+  },
+  tiCnH: {
+    color: Color.textColorPrimary,
+  },
+  messageTypetext: {
+    maxWidth: 270,
+    justifyContent: "center",
+    paddingHorizontal: Padding.p_base,
+    alignItems: "center",
+  },
+  messageitem: {
+    backgroundColor: Color.tagGray100,
+    borderRadius: Border.br_xl,
+    marginLeft: 8,
+    overflow: "hidden",
+    flexDirection: "row",
+  },
+  messagecell: {
+    overflow: "hidden",
+    flexDirection: "row",
+  },
+  tiCnH1: {
+    color: Color.textWhite,
+  },
+  status: {
+    marginLeft: 4,
+  },
+  messagecell1: {
+    justifyContent: "flex-end",
+    overflow: "hidden",
+    flexDirection: "row",
+  },
+  replyFillIcon: {
+    height: 12,
+  },
+  lMinhTr1: {
+    marginLeft: 4,
+    color: Color.textPrimary,
+    fontFamily: FontFamily.text14Medium,
+    fontWeight: "500",
+  },
+  trLi: {
+    marginLeft: 4,
+    lineHeight: 16,
+    fontSize: FontSize.caption1Regular_size,
+    textAlign: "left",
+  },
+  replytitle: {
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  replyMessage1: {
+    color: Color.textWhite,
+    overflow: "hidden",
+  },
+  replyType: {
+    paddingTop: Padding.p_5xs,
+    paddingBottom: Padding.p_lg,
+    paddingHorizontal: Padding.p_base,
+    flexDirection: "row",
+  },
+  replyitem: {
+    borderTopLeftRadius: Border.br_xl,
+    borderTopRightRadius: Border.br_xl,
+    borderBottomLeftRadius: Border.br_xl,
+    backgroundColor: Color.brandLight5,
+    justifyContent: "flex-end",
+    overflow: "hidden",
+  },
+  replyMessageWrapper: {
+    alignItems: "flex-end",
+  },
+  messageitem5: {
+    marginTop: -16,
+  },
+  logMessagenormal1: {
+    justifyContent: "center",
+  },
+  messagelogAction1: {
+    display: "none",
+  },
+  layoutBlocksVertical: {
+    flex: 1,
+  },
+  khungChat: {
+    paddingTop: Padding.p_base,
+    paddingBottom: Padding.p_21xl,
+    alignItems: "flex-end",
+    justifyContent: "center",
+    overflow: "hidden",
+    paddingHorizontal: Padding.p_base,
+    flexDirection: "row",
+    alignSelf: "stretch",
+    flex: 1,
+  },
+  angTrLi: {
+    textAlign: "left",
+    color: Color.textPrimary,
+  },
+  chnhBn: {
+    color: Color.textBlack,
+    fontFamily: FontFamily.headlineSemiBold,
+    fontWeight: "600",
+    lineHeight: 20,
+    fontSize: FontSize.text14Regular_size,
+    marginLeft: 2,
+    textAlign: "left",
+    letterSpacing: 0,
+  },
+  tiMunTm: {
+    marginTop: 2,
+    lineHeight: 16,
+    fontSize: FontSize.caption1Regular_size,
+    textAlign: "left",
+    overflow: "hidden",
+    alignSelf: "stretch",
+  },
+  validateIcon: {
+    marginLeft: 16,
+    overflow: "hidden",
+  },
+  helperText: {
+    backgroundColor: Color.neutral3F5F5F5,
+    display: "none",
+    paddingHorizontal: Padding.p_base,
+    width: 375,
+  },
+  icon: {
+    justifyContent: "center",
+    height: 40,
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  nhpTinNhn: {
+    color: Color.textSecondary,
+    fontFamily: FontFamily.text14Regular,
+    lineHeight: 22,
+  },
+  nhpTinNhnWrapper: {
+    maxHeight: 72,
+    zIndex: 0,
+    alignItems: "center",
+    flexDirection: "row",
+    flex: 1,
+  },
+  emojiIcon: {
+    right: 8,
+    zIndex: 1,
+    overflow: "hidden",
+    height: 24,
+    width: 24,
+  },
+  composer: {
+    borderRadius: Border.br_5xs,
+    borderColor: Color.colorWhitesmoke_100,
+    borderWidth: 1,
+    paddingLeft: Padding.p_5xs,
+    paddingTop: Padding.p_4xs,
+    paddingRight: Padding.p_21xl,
+    paddingBottom: Padding.p_4xs,
+    borderStyle: "solid",
+    flex: 1,
+    backgroundColor: Color.textWhite,
+  },
+  icon1: {
+    height: 40,
+  },
+  composeBar1: {
+    paddingHorizontal: Padding.p_xs,
+    backgroundColor: Color.neutral3F5F5F5,
+    alignItems: "flex-end",
+    alignSelf: "stretch",
+  },
+  homeIndicator: {
+    marginLeft: -66.5,
+    borderRadius: Border.br_81xl,
+    backgroundColor: Color.black,
+    width: 134,
+    height: 5,
+    left: "50%",
+  },
+  homeindicator: {
+    height: 34,
+    alignSelf: "stretch",
+  },
+  composeBar: {
+    backgroundColor: Color.neutral3F5F5F5,
+    justifyContent: "flex-end",
+    width: 375,
+  },
+  roomheaderParent: {
+    top: 47,
+    height: 765,
+    width: 375,
+    left: 0,
+    position: "absolute",
+  },
+  notchIcon: {
+    marginLeft: -81.5,
+    top: -2,
+    width: 164,
+    height: 32,
+    left: "50%",
+    display: "none",
+  },
+  text: {
+    fontFamily: FontFamily.defaultRegularCallout,
+    color: Color.colorGray_200,
+    width: 54,
+    top: 1,
+    fontWeight: "600",
+    textAlign: "center",
+    lineHeight: 22,
+    letterSpacing: 0,
+    fontSize: FontSize.headlineSemiBold_size,
+    height: 20,
+    left: 0,
+  },
+  statusbarTime: {
+    marginLeft: -27,
+    borderRadius: Border.br_5xl,
+    top: 0,
+  },
+  leftSide: {
+    marginLeft: -162.5,
+    top: 14,
+  },
+  batteryIcon: {
+    marginLeft: 11.3,
+    width: 27,
+    top: 0,
+  },
+  wifiIcon: {
+    width: 17,
+    height: 12,
+  },
+  iconMobileSignal: {
+    marginLeft: -38.7,
+    width: 18,
+    left: "50%",
+    height: 12,
+  },
+  rightSide: {
+    marginLeft: 86.5,
+    top: 19,
+    width: 77,
+  },
+  statusbarIphone13: {
+    marginLeft: -187.5,
+    height: 47,
+    top: 0,
+    left: "50%",
+    overflow: "hidden",
+    width: 375,
+  },
+  iconContainer: {
+    width: 20,
+    height: 24,
+  },
+  title: {
+    lineHeight: 24,
+    color: Color.textWhite,
+    fontFamily: FontFamily.text14Medium,
+    fontWeight: "500",
+  },
+  description: {
+    color: Color.colorGray_600,
+    textAlign: "left",
+    display: "none",
+    alignSelf: "stretch",
+  },
+  titleParent: {
+    marginLeft: 8,
+    flex: 1,
+  },
+  closeIcon7: {
+    display: "none",
+    marginLeft: 8,
+    overflow: "hidden",
+  },
+  toast: {
+    marginLeft: -171.5,
+    bottom: 704,
+    borderRadius: Border.br_9xs,
+    backgroundColor: Color.tagGray600,
+    shadowColor: "rgba(5, 16, 55, 0.15)",
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowRadius: 30,
+    elevation: 30,
+    shadowOpacity: 1,
+    left: "50%",
+    paddingVertical: Padding.p_xs,
+    paddingHorizontal: Padding.p_base,
+    alignItems: "center",
+    position: "absolute",
+  },
+  saoChpTinNhn: {
+    width: "100%",
+    height: 681,
+  },
+});
+
+export default SaoChpTinNhn;
